@@ -1,9 +1,10 @@
 import os
 import re
 import subprocess
+import sys
 
 # Define the path to the directory containing the Python files
-directory_path = "/path/to/directory"
+directory_path = sys.argv[1]
 
 # Get a list of all the Python files in the directory
 file_names = [f for f in os.listdir(directory_path) if f.endswith(".py")]
